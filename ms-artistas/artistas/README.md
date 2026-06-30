@@ -2,9 +2,9 @@
 
 Microservicio de **gestión de perfiles de artistas y sus agendas de presentaciones**, perteneciente al ecosistema **Ticket System** (arquitectura de microservicios para venta y administración de entradas a eventos).
 
-[![CI/CD](https://github.com/REEMPLAZAR_ORG/ticket-system/actions/workflows/ms-artistas-ci.yml/badge.svg)](../../actions/workflows/ms-artistas-ci.yml)
-[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=ticket-system_ms-artistas&metric=alert_status)](https://sonarcloud.io/dashboard?id=ticket-system_ms-artistas)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=ticket-system_ms-artistas&metric=coverage)](https://sonarcloud.io/dashboard?id=ticket-system_ms-artistas)
+[![CI/CD](https://github.com/DevVivas/ticket-system-ms-artistas/actions/workflows/ms-artistas-ci.yml/badge.svg)](https://github.com/DevVivas/ticket-system-ms-artistas/actions/workflows/ms-artistas-ci.yml)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=DevVivas_ticket-system-ms-artistas&metric=alert_status)](https://sonarcloud.io/dashboard?id=DevVivas_ticket-system-ms-artistas)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=DevVivas_ticket-system-ms-artistas&metric=coverage)](https://sonarcloud.io/dashboard?id=DevVivas_ticket-system-ms-artistas)
 [![Java](https://img.shields.io/badge/Java-21-orange?logo=openjdk)](https://openjdk.org/)
 [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.0.6-brightgreen?logo=springboot)](https://spring.io/projects/spring-boot)
 [![License](https://img.shields.io/badge/license-Educational-blue)](#-licencia)
@@ -245,7 +245,7 @@ El build falla automáticamente si la cobertura de instrucciones cae por debajo 
 
 ## 🔄 CI/CD
 
-El pipeline de GitHub Actions ([`.github/workflows/ms-artistas-ci.yml`](../../.github/workflows/ms-artistas-ci.yml)) se dispara automáticamente ante cambios en `ms-artistas/**` y ejecuta las siguientes etapas en orden:
+El pipeline de GitHub Actions ([`.github/workflows/ms-artistas-ci.yml`](https://github.com/DevVivas/ticket-system-ms-artistas/blob/main/.github/workflows/ms-artistas-ci.yml)) se dispara automáticamente ante cambios en `ms-artistas/**` y ejecuta las siguientes etapas en orden:
 
 ```
  Build  →  Test + Cobertura (JaCoCo)  →  Quality Gate (SonarCloud)  →  Docker Build & Push

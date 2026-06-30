@@ -19,8 +19,8 @@
 		<java.version>21</java.version>
 
 		<!-- Quality Gates: SonarCloud + JaCoCo -->
-		<sonar.organization>${env.SONAR_ORGANIZATION}</sonar.organization>
-		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+		<!-- sonar.organization y demás flags de Sonar se pasan por CLI desde
+		     el workflow de GitHub Actions (ver .github/workflows/ms-artistas-ci.yml) -->
 		<sonar.coverage.jacoco.xmlReportPaths>${project.build.directory}/site/jacoco/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
 		<sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
 		<sonar.exclusions>**/Model/**,**/DTO/**,**/*Application.java</sonar.exclusions>
